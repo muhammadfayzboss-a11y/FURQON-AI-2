@@ -4,8 +4,8 @@ OpenRouter orqali AI bilan ishlash (Gemini 2.0 Flash — BEPUL!)
 """
 
 import json
+import requests
 from typing import Dict, List
-from openai import OpenAI
 from config import OPENROUTER_API_KEY, AI_BASE_URL, AI_MODEL, AI_MAX_TOKENS, AI_TEMPERATURE
 from search_engine import SearchEngine
 
@@ -14,11 +14,58 @@ class AIHandler:
     """AI yordamida savollarga javob berish"""
 
     def __init__(self):
-        self.client = OpenAI(
-            base_url=AI_BASE_URL,
-            api_key=OPENROUTER_API_KEY,
-        )
         self.search = SearchEngine()
+        self.api_key = OPENROUTER_API_KEY
+        self.base_url = AI_BASE_URL
+        self.model = AI_MODEL
+        print(f"✅ AI Handler tayyor! Model: {self.model}")
+
+    def _call_ai(self, system_prompt: str, user_message: str, max_tokens: int = 2048, temperature: float = 0.3, json_mode: bool = False) -> str:
+        """
+        OpenRouter API ga so'rov yuborish (requests orqali — ishonchli!)
+        """
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json",
+            "HTTP-Referer": "https://github.com/muhammadfayzboss-a11y/FURQON-AI-2",
+            "X-Title": "FURQON AI Bot"
+        }
+
+        payload = {
+            "model": self.model,
+            "messages": [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_message}
+            ],
+            "max_tokens": max_tokens,
+            "temperature": temperature,
+        }
+
+        if json_mode:
+            payload["response_format"] = {"type": "json_object"}
+
+        try:
+            response = requests.post(
+                f"{self.base_url}/chat/completions",
+                headers=headers,
+                json=payload,
+                timeout=60
+            )
+            response.raise_for_status()
+            data = response.json()
+            return data["choices"][0]["message"]["content"]
+
+        except requests.exceptions.Timeout:
+            print("⚠️ AI so'rovi vaqtidan oshdi")
+            return None
+        except requests.exceptions.RequestException as e:
+            print(f"⚠️ API xatosi: {e}")
+            if hasattr(e, 'response') and e.response is not None:
+                print(f"⚠️ Javob: {e.response.text}")
+            return None
+        except (KeyError, IndexError, json.JSONDecodeError) as e:
+            print(f"⚠️ Javobni o'qishda xato: {e}")
+            return None
 
     def _extract_topics(self, question: str) -> Dict:
         """
@@ -37,33 +84,26 @@ Javobni FAQAT quyidagi JSON formatda bering, hech qanday qo'shimcha matn yozma:
   "category": "namoz|ro'za|zakot|haj|tavhid|axloq|duo|sabr|shukr|ilim|jannat|do'zax|tavba|nikoh|oila|huquq|boshqa"
 }
 
-Mavzular o'zbek tilida bo'lsin. Masalan: namoz, ro'za, zakot, tavhid, shirk, sabr, shukr, tavba, 
-ilim, duo, zikr, jannat, do'zax, axloq, oila, nikoh, ota-ona, qo'shni, sadaqa, infaq, 
+Mavzular o'zbek tilida bo'lsin. Masalan: namoz, ro'za, zakot, tavhid, shirk, sabr, shukr, tavba,
+ilim, duo, zikr, jannat, do'zax, axloq, oila, nikoh, ota-ona, qo'shni, sadaqa, infaq,
 hijob, halol, harom, taqvo, imon, kufr, nifoq, hijrat, jihod, payg'ambar, sahobalar, va hokazo."""
 
-        try:
-            response = self.client.chat.completions.create(
-                model=AI_MODEL,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": question}
-                ],
-                max_tokens=500,
-                temperature=0.1,
-                response_format={"type": "json_object"}
-            )
+        result_text = self._call_ai(system_prompt, question, max_tokens=500, temperature=0.1, json_mode=True)
 
-            result = json.loads(response.choices[0].message.content)
-            return result
+        if result_text:
+            try:
+                return json.loads(result_text)
+            except json.JSONDecodeError:
+                pass
 
-        except Exception as e:
-            print(f"⚠️ AI mavzu chiqarishda xato: {e}")
-            return {
-                "meaning": question,
-                "topics": [question.lower()],
-                "keywords": question.lower().split(),
-                "category": "boshqa"
-            }
+        # Fallback: AI ishlamasa
+        print("⚠️ AI mavzu chiqara olmadi, oddiy qidirish ishlatiladi")
+        return {
+            "meaning": question,
+            "topics": question.lower().split(),
+            "keywords": question.lower().split(),
+            "category": "boshqa"
+        }
 
     def _generate_answer(self, question: str, meaning: str, quran_results: List[Dict], hadith_results: List[Dict]) -> str:
         """
@@ -74,7 +114,7 @@ hijob, halol, harom, taqvo, imon, kufr, nifoq, hijrat, jihod, payg'ambar, sahoba
         for i, ayat in enumerate(quran_results, 1):
             quran_texts += f"""
 {i}. {ayat['surah_name']} surasi, {ayat['ayat']}-oyat
-   Arabча: {ayat['arabic']}
+   Arabcha: {ayat['arabic']}
    O'zbekcha: {ayat['uzbek']}
 """
 
@@ -83,7 +123,7 @@ hijob, halol, harom, taqvo, imon, kufr, nifoq, hijrat, jihod, payg'ambar, sahoba
         for i, hadith in enumerate(hadith_results, 1):
             hadith_texts += f"""
 {i}. {hadith['collection']} (Raviy: {hadith['narrator']})
-   Arabча: {hadith['arabic']}
+   Arabcha: {hadith['arabic']}
    O'zbekcha: {hadith['uzbek']}
 """
 
@@ -100,7 +140,7 @@ QOIDALAR:
 Foydalanuvchi savoli: {question}
 Savolning ma'nosi: {meaning}
 
-TOPILGAN QUR'OON OYATLARI:
+TOPILGAN QUR'ON OYATLARI:
 {quran_texts if quran_texts else "Aynan mos oyat topilmadi"}
 
 TOPILGAN HADISLAR:
@@ -119,22 +159,13 @@ Endi quyidagi strukturada javob ber:
 💡 **Xulosa:**
 [Qisqacha xulosa va maslahat]"""
 
-        try:
-            response = self.client.chat.completions.create(
-                model=AI_MODEL,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": question}
-                ],
-                max_tokens=AI_MAX_TOKENS,
-                temperature=AI_TEMPERATURE,
-            )
+        result = self._call_ai(system_prompt, question, max_tokens=AI_MAX_TOKENS, temperature=AI_TEMPERATURE)
 
-            return response.choices[0].message.content
+        if result:
+            return result
 
-        except Exception as e:
-            print(f"⚠️ AI javob yaratishda xato: {e}")
-            return self._fallback_answer(question, quran_results, hadith_results)
+        # Fallback
+        return self._fallback_answer(question, quran_results, hadith_results)
 
     def _fallback_answer(self, question: str, quran_results: List[Dict], hadith_results: List[Dict]) -> str:
         """AI ishlamaganda oddiy javob formati"""
