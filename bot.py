@@ -14,7 +14,7 @@ from telegram.ext import (
     filters,
     ContextTypes,
 )
-from config import TELEGRAM_BOT_TOKEN, BOT_NAME, BOT_VERSION
+from config import TELEGRAM_BOT_TOKEN, BOT_NAME, BOT_VERSION, AI_MODEL
 from ai_handler import AIHandler
 from search_engine import SearchEngine
 
