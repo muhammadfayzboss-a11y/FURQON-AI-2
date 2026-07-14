@@ -6,7 +6,7 @@ OpenRouter orqali AI bilan ishlash (Gemini 2.0 Flash — BEPUL!)
 import json
 import requests
 from typing import Dict, List
-from config import OPENROUTER_API_KEY, AI_BASE_URL, AI_MODEL, AI_MAX_TOKENS, AI_TEMPERATURE
+from config import OPENROUTER_API_KEY, AI_BASE_URL, AI_MODEL, AI_FALLBACK_MODELS, AI_MAX_TOKENS, AI_TEMPERATURE
 from search_engine import SearchEngine
 
 
@@ -18,11 +18,14 @@ class AIHandler:
         self.api_key = OPENROUTER_API_KEY
         self.base_url = AI_BASE_URL
         self.model = AI_MODEL
+        self.fallback_models = AI_FALLBACK_MODELS
+        self.all_models = [self.model] + self.fallback_models
         print(f"✅ AI Handler tayyor! Model: {self.model}")
 
     def _call_ai(self, system_prompt: str, user_message: str, max_tokens: int = 2048, temperature: float = 0.3, json_mode: bool = False) -> str:
         """
         OpenRouter API ga so'rov yuborish (requests orqali — ishonchli!)
+        Agar asosiy model ishlamasa, fallback modellarga o'tadi
         """
         headers = {
             "Authorization": f"Bearer {self.api_key}",
@@ -44,28 +47,45 @@ class AIHandler:
         if json_mode:
             payload["response_format"] = {"type": "json_object"}
 
-        try:
-            response = requests.post(
-                f"{self.base_url}/chat/completions",
-                headers=headers,
-                json=payload,
-                timeout=60
-            )
-            response.raise_for_status()
-            data = response.json()
-            return data["choices"][0]["message"]["content"]
+        # Har bir modelni sinab ko'rish
+        for model in self.all_models:
+            payload["model"] = model
+            try:
+                response = requests.post(
+                    f"{self.base_url}/chat/completions",
+                    headers=headers,
+                    json=payload,
+                    timeout=60
+                )
+                data = response.json()
 
-        except requests.exceptions.Timeout:
-            print("⚠️ AI so'rovi vaqtidan oshdi")
-            return None
-        except requests.exceptions.RequestException as e:
-            print(f"⚠️ API xatosi: {e}")
-            if hasattr(e, 'response') and e.response is not None:
-                print(f"⚠️ Javob: {e.response.text}")
-            return None
-        except (KeyError, IndexError, json.JSONDecodeError) as e:
-            print(f"⚠️ Javobni o'qishda xato: {e}")
-            return None
+                # Muvaffaqiyatli javob
+                if "choices" in data and len(data["choices"]) > 0:
+                    content = data["choices"][0]["message"]["content"]
+                    if model != self.model:
+                        print(f"⚠️ Fallback model ishlatildi: {model}")
+                    return content
+
+                # Rate limit xatosi — keyingi modelga o'tish
+                error_code = data.get("error", {}).get("code", "")
+                if error_code in [429, 404]:
+                    print(f"⚠️ {model} — ishlamadi (kod: {error_code}), keyingi model...")
+                    continue
+
+                # Boshqa xato
+                print(f"⚠️ {model} — xato: {data.get('error', {}).get('message', 'nomaʼlum')}")
+                continue
+
+            except requests.exceptions.Timeout:
+                print(f"⚠️ {model} — timeout, keyingi model...")
+                continue
+            except Exception as e:
+                print(f"⚠️ {model} — xato: {e}")
+                continue
+
+        # Barcha modellar ishlamadi
+        print("❌ Barcha AI modellar ishlamadi!")
+        return None
 
     def _extract_topics(self, question: str) -> Dict:
         """
