@@ -347,8 +347,15 @@ def main():
     init_handlers()
     print("✅ AI va qidiruv tizimi tayyor!")
 
-    # Bot yaratish
-    app = Application.builder().token(TELEGRAM_BOT_TOKEN).build()
+    # Bot yaratish (timeout va retry bilan)
+    from telegram.request import HTTPXRequest
+    request = HTTPXRequest(
+        connect_timeout=30.0,
+        read_timeout=60.0,
+        write_timeout=60.0,
+        pool_timeout=30.0,
+    )
+    app = Application.builder().token(TELEGRAM_BOT_TOKEN).request(request).get_updates_request(request).build()
 
     # Handler'larni qo'shish
     app.add_handler(CommandHandler("start", start_command))
