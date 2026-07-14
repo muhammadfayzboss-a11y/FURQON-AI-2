@@ -25,11 +25,11 @@ HADITH_DATA_PATH = "hadith_data/hadith_uz.json"
 
 # AI sozlamalari — OpenRouter orqali Gemini 2.0 Flash (BEPUL!)
 AI_BASE_URL = "https://openrouter.ai/api/v1"
-AI_MODEL = "nvidia/nemotron-3-nano-30b-a3b:free"  # Bepul model (ishlaydi!)
+AI_MODEL = "nvidia/nemotron-3-ultra-550b-a55b:free"  # Bepul model (katta va sifatli!)
 AI_FALLBACK_MODELS = [
-    "nvidia/nemotron-nano-9b-v2:free",
-    "meta-llama/llama-3.2-3b-instruct:free",
-    "poolside/laguna-xs-2.1:free",
+    "google/gemma-4-31b-it:free",
+    "nvidia/nemotron-3-super-120b-a12b:free",
+    "nvidia/nemotron-3-nano-30b-a3b:free",
 ]
 AI_MAX_TOKENS = 2048
 AI_TEMPERATURE = 0.3

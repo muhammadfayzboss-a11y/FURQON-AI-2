@@ -1,9 +1,10 @@
 """
 FURQON AI - AI Handler
-OpenRouter orqali AI bilan ishlash (Gemini 2.0 Flash — BEPUL!)
+OpenRouter orqali AI bilan ishlash (BEPUL!)
 """
 
 import json
+import re
 import requests
 from typing import Dict, List
 from config import OPENROUTER_API_KEY, AI_BASE_URL, AI_MODEL, AI_FALLBACK_MODELS, AI_MAX_TOKENS, AI_TEMPERATURE
@@ -22,9 +23,45 @@ class AIHandler:
         self.all_models = [self.model] + self.fallback_models
         print(f"✅ AI Handler tayyor! Model: {self.model}")
 
+    def _clean_response(self, text: str) -> str:
+        """
+        AI javobidan thinking/reasoning qismlarini tozalash
+        """
+        if not text:
+            return text
+
+        # <think>...</think> teglarini olib tashlash
+        text = re.sub(r'<think>.*?</think>', '', text, flags=re.DOTALL)
+
+        # <thinking>...</thinking> teglarini olib tashlash
+        text = re.sub(r'<thinking>.*?</thinking>', '', text, flags=re.DOTALL)
+
+        # "Let me think..." kabi boshlanishlarni olib tashlash
+        thinking_patterns = [
+            r'^(?:Okay|Let me|Let\'s|I need to|We need to|First|Hmm|Actually|Wait).*?\n\n',
+            r'^.*?[Ww]e need to answer.*?\n\n',
+            r'^.*?The question.*?means.*?\n\n',
+        ]
+        for pattern in thinking_patterns:
+            text = re.sub(pattern, '', text, flags=re.DOTALL)
+
+        # Bo'sh qatorlarni tozalash
+        text = text.strip()
+
+        # Agar javob hali ham thinkingga o'xshasa — faqat oxirgi strukturaviy qismini olish
+        if '🕌' not in text and '📖' not in text and len(text) > 500:
+            # Oxirgi mantiqiy qismini topishga urinish
+            parts = text.split('\n\n')
+            for i, part in enumerate(parts):
+                if any(kw in part for kw in ['🕌', '📖', '📚', '💡', 'Javob', 'Xulosa']):
+                    text = '\n\n'.join(parts[i:])
+                    break
+
+        return text.strip()
+
     def _call_ai(self, system_prompt: str, user_message: str, max_tokens: int = 2048, temperature: float = 0.3, json_mode: bool = False) -> str:
         """
-        OpenRouter API ga so'rov yuborish (requests orqali — ishonchli!)
+        OpenRouter API ga so'rov yuborish
         Agar asosiy model ishlamasa, fallback modellarga o'tadi
         """
         headers = {
@@ -55,7 +92,7 @@ class AIHandler:
                     f"{self.base_url}/chat/completions",
                     headers=headers,
                     json=payload,
-                    timeout=60
+                    timeout=90
                 )
                 data = response.json()
 
@@ -91,30 +128,34 @@ class AIHandler:
         """
         AI yordamida savoldan mavzularni va ma'noni chiqarish
         """
-        system_prompt = """Sen Islom dini bo'yicha ekspertsan. Foydalanuvchining savolini tahlil qilib:
-1. Savolning asosiy ma'nosini tushun
-2. Qaysi Islomiy mavzularga aloqadorligini aniqla
-3. Qidiruv uchun kalit so'zlar va mavzularni chiqar
+        system_prompt = """Sen Islom dini bo'yichi ekspertsan. Foydalanuvchi savolini tahlil qil.
 
-Javobni FAQAT quyidagi JSON formatda bering, hech qanday qo'shimcha matn yozma:
+MUTLAQ FAQAT JSON qaytar. Hech qanday boshqa matn YOZMA. O'ylash jarayonini YOZMA.
+
 {
-  "meaning": "savolning qisqacha ma'nosi o'zbek tilida",
-  "topics": ["mavzu1", "mavzu2", "mavzu3"],
-  "keywords": ["kalit1", "kalit2", "kalit3"],
-  "category": "namoz|ro'za|zakot|haj|tavhid|axloq|duo|sabr|shukr|ilim|jannat|do'zax|tavba|nikoh|oila|huquq|boshqa"
+  "meaning": "savolning qisqacha ma'nosi",
+  "topics": ["mavzu1", "mavzu2"],
+  "keywords": ["kalit1", "kalit2"],
+  "category": "boshqa"
 }
 
-Mavzular o'zbek tilida bo'lsin. Masalan: namoz, ro'za, zakot, tavhid, shirk, sabr, shukr, tavba,
-ilim, duo, zikr, jannat, do'zax, axloq, oila, nikoh, ota-ona, qo'shni, sadaqa, infaq,
-hijob, halol, harom, taqvo, imon, kufr, nifoq, hijrat, jihod, payg'ambar, sahobalar, va hokazo."""
+Mavzular: namoz, ro'za, zakot, tavhid, sabr, shukr, tavba, ilim, duo, zikr, jannat, do'zax, axloq, oila, nikoh, ota-ona, sadaqa, infaq, hijob, halol, harom, taqvo, imon, sahobalar, payg'ambar, va hokazo."""
 
-        result_text = self._call_ai(system_prompt, question, max_tokens=500, temperature=0.1, json_mode=True)
+        result_text = self._call_ai(system_prompt, question, max_tokens=300, temperature=0.1, json_mode=True)
 
         if result_text:
             try:
-                return json.loads(result_text)
+                # Thinking qismini tozalash
+                cleaned = self._clean_response(result_text)
+                return json.loads(cleaned)
             except json.JSONDecodeError:
-                pass
+                # JSON topishga urinish
+                json_match = re.search(r'\{[^{}]+\}', result_text, re.DOTALL)
+                if json_match:
+                    try:
+                        return json.loads(json_match.group())
+                    except json.JSONDecodeError:
+                        pass
 
         # Fallback: AI ishlamasa
         print("⚠️ AI mavzu chiqara olmadi, oddiy qidirish ishlatiladi")
@@ -147,42 +188,56 @@ hijob, halol, harom, taqvo, imon, kufr, nifoq, hijrat, jihod, payg'ambar, sahoba
    O'zbekcha: {hadith['uzbek']}
 """
 
-        system_prompt = f"""Sen "FURQON AI" — Qur'on va Hadislar asosida javob beruvchi Islomiy bilim botsan.
+        system_prompt = """Sen "FURQON AI" botsan — Qur'on va Hadislar asosida javob berasan.
+
+TAQIQ QILINGAN:
+- O'z o'yish jarayoningni yozish MUTLAQ TAQIQ QILINGAN!
+- "Let me think", "We need to", "Okay", "Actually" kabi so'zlar bilan boshlash MUMKIN EMAS!
+- Faqat TAYYOR, Yakuniy javob berasan!
+- Shubha, tahlil, fikr yuritish YOQ!
+- Boshqa tilda yozish YOQ! Faqat O'ZBEK tilida!
 
 QOIDALAR:
-1. Javobni o'zbek tilida, tushunarli va hurmatli tarzda ber
-2. Har bir dalilni Qur'on yoki Hadis bilan mustahkamla
-3. Oyat va hadislarni to'g'ri keltir
-4. O'zingdan hech narsa qo'shma, faqat keltirilgan manbalarga tayangan holda tushuntir
-5. Agar savolga aniq javob topolmasang, shuni ayt
-6. Javobni chiroyli formatda, emoji bilan bezaklab ber
+1. O'zbek tilida, hurmatli va tushunarli javob ber
+2. Qur'on va Hadis dalillarini keltir
+3. O'zingdan hech narsa qo'shma
+4. To'g'ridan-to'g'ri javob ber — "🕌" dan boshla!
 
-Foydalanuvchi savoli: {question}
-Savolning ma'nosi: {meaning}
+Javob formati:
 
-TOPILGAN QUR'ON OYATLARI:
-{quran_texts if quran_texts else "Aynan mos oyat topilmadi"}
-
-TOPILGAN HADISLAR:
-{hadith_texts if hadith_texts else "Aynan mos hadis topilmadi"}
-
-Endi quyidagi strukturada javob ber:
-
-🕌 **[Savolning qisqacha javobi]**
+🕌 **[Qisqacha javob]**
 
 📖 **Qur'on dalillari:**
-[Har bir oyatni keltirib, tushuntirish]
+[dalillar]
 
 📚 **Hadis dalillari:**
-[Har bir hadisni keltirib, tushuntirish]
+[dalillar]
 
 💡 **Xulosa:**
-[Qisqacha xulosa va maslahat]"""
+[xulosa]"""
 
-        result = self._call_ai(system_prompt, question, max_tokens=AI_MAX_TOKENS, temperature=AI_TEMPERATURE)
+        user_prompt = f"""Savol: {question}
+
+Qidiruv natijalari:
+
+QUR'ON OYATLARI:
+{quran_texts if quran_texts else "Mos oyat topilmadi"}
+
+HADISLAR:
+{hadith_texts if hadith_texts else "Mos hadis topilmadi"}
+
+Endi to'g'ridan-to'g'ri javob ber! O'ylash jarayonini YOZMA!"""
+
+        result = self._call_ai(system_prompt, user_prompt, max_tokens=AI_MAX_TOKENS, temperature=AI_TEMPERATURE)
 
         if result:
-            return result
+            # Thinking qismini tozalash
+            cleaned = self._clean_response(result)
+            # Agar tozalangan javob juda qisqa bo'lsa yoki bo'sh bo'lsa, originalni qaytarish
+            if len(cleaned) > 50:
+                return cleaned
+            elif len(result) > 50:
+                return result
 
         # Fallback
         return self._fallback_answer(question, quran_results, hadith_results)
