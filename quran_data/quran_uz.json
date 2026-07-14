@@ -1,0 +1,812 @@
+[
+  {
+    "id": 1,
+    "surah": 1,
+    "surah_name": "Fotiha",
+    "ayat": 1,
+    "arabic": "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+    "uzbek": "Mehribon va rahmli Alloh nomi bilan.",
+    "topics": ["bismillah", "alloh nomi", "rahmat"]
+  },
+  {
+    "id": 2,
+    "surah": 1,
+    "surah_name": "Fotiha",
+    "ayat": 2,
+    "arabic": "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+    "uzbek": "Hamd olamlarning Rabbi Allohga xosdir.",
+    "topics": ["hamd", "shukr", "rab"]
+  },
+  {
+    "id": 3,
+    "surah": 1,
+    "surah_name": "Fotiha",
+    "ayat": 3,
+    "arabic": "الرَّحْمَٰنِ الرَّحِيمِ",
+    "uzbek": "U Mehribon va Rahmlidir.",
+    "topics": ["rahmat", "mehribonlik"]
+  },
+  {
+    "id": 4,
+    "surah": 1,
+    "surah_name": "Fotiha",
+    "ayat": 5,
+    "arabic": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+    "uzbek": "Faqat Senga ibodat qilamiz va faqat Sendan yordam so'raymiz.",
+    "topics": ["ibodat", "yordam", "tavakkul"]
+  },
+  {
+    "id": 5,
+    "surah": 1,
+    "surah_name": "Fotiha",
+    "ayat": 6,
+    "arabic": "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ",
+    "uzbek": "Bizni to'g'ri yo'lga boshlagin.",
+    "topics": ["hidoyat", "to'g'ri yo'l", "duo"]
+  },
+  {
+    "id": 6,
+    "surah": 2,
+    "surah_name": "Baqara",
+    "ayat": 2,
+    "arabic": "ذَٰلِكَ الْكِتَابُ لَا رَيْبَ فِيهِ هُدًى لِّلْمُتَّقِينَ",
+    "uzbek": "Ushbu Kitobda shubha yo'q. U taqvo egalariga hidoyatdir.",
+    "topics": ["quron", "hidoyat", "taqvo", "kitob"]
+  },
+  {
+    "id": 7,
+    "surah": 2,
+    "surah_name": "Baqara",
+    "ayat": 3,
+    "arabic": "الَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ وَيُقِيمُونَ الصَّلَاةَ وَمِمَّا رَزَقْنَاهُمْ يُنفِقُونَ",
+    "uzbek": "Ular g'aybga imon keltiradi, namozni o'qiydi va Biz bergan rizqdan infaq qiladi.",
+    "topics": ["imon", "namoz", "sadaqa", "infaq"]
+  },
+  {
+    "id": 8,
+    "surah": 2,
+    "surah_name": "Baqara",
+    "ayat": 21,
+    "arabic": "يَا أَيُّهَا النَّاسُ اعْبُدُوا رَبَّكُمُ الَّذِي خَلَقَكُمْ وَالَّذِينَ مِن قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ",
+    "uzbek": "Ey odamlar! Sizlarni va sizlardan oldingilarni yaratgan Rabbingizga ibodat qilingiz. Shoyadki taqvo qilsangiz.",
+    "topics": ["ibodat", "yaratilish", "taqvo"]
+  },
+  {
+    "id": 9,
+    "surah": 2,
+    "surah_name": "Baqara",
+    "ayat": 25,
+    "arabic": "وَبَشِّرِ الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ أَنَّ لَهُمْ جَنَّاتٍ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ",
+    "uzbek": "Imon keltirgan va solih amallarni qilgan kishilarga ostidan daryolar oqib turadigan jannatlar borligini bashorat ber.",
+    "topics": ["jannat", "savob", "solih amal", "mukofot"]
+  },
+  {
+    "id": 10,
+    "surah": 2,
+    "surah_name": "Baqara",
+    "ayat": 43,
+    "arabic": "وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ وَارْكَعُوا مَعَ الرَّاكِعِينَ",
+    "uzbek": "Namozni o'qing, zakotni bering va ruku qiluvchilar bilan ruku qiling.",
+    "topics": ["namoz", "zakot", "jamoat"]
+  },
+  {
+    "id": 11,
+    "surah": 2,
+    "surah_name": "Baqara",
+    "ayat": 83,
+    "arabic": "وَإِذْ أَخَذْنَا مِيثَاقَ بَنِي إِسْرَائِيلَ لَا تَعْبُدُونَ إِلَّا اللَّهَ وَبِالْوَالِدَيْنِ إِحْسَانًا",
+    "uzbek": "Va yod olingki, Biz Isroil farzandlaridan faqat Allohga ibodat qilish va ota-onaga yaxshilik qilish haqida ahd oldik.",
+    "topics": ["tavhid", "ota-ona", "yaxshilik"]
+  },
+  {
+    "id": 12,
+    "surah": 2,
+    "surah_name": "Baqara",
+    "ayat": 110,
+    "arabic": "وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ وَمَا تُقَدِّمُوا لِأَنفُسِكُم مِّنْ خَيْرٍ تَجِدُوهُ عِندَ اللَّهِ",
+    "uzbek": "Namozni o'qing va zakotni bering. O'zingiz uchun qilgan har qanday yaxshilikni Alloh huzurida topasiz.",
+    "topics": ["namoz", "zakot", "yaxshilik", "savob"]
+  },
+  {
+    "id": 13,
+    "surah": 2,
+    "surah_name": "Baqara",
+    "ayat": 152,
+    "arabic": "فَاذْكُرُونِي أَذْكُرْكُمْ وَاشْكُرُوا لِي وَلَا تَكْفُرُونِ",
+    "uzbek": "Bas, Meni zikr qilingiz, Men ham sizni zikr qilaman. Menga shukr qilingiz va Meni inkor qilmangiz.",
+    "topics": ["zikr", "shukr", "alohiga minnatdorlik"]
+  },
+  {
+    "id": 14,
+    "surah": 2,
+    "surah_name": "Baqara",
+    "ayat": 155,
+    "arabic": "وَلَنَبْلُوَنَّكُم بِشَيْءٍ مِّنَ الْخَوْفِ وَالْجُوعِ وَنَقْصٍ مِّنَ الْأَمْوَالِ وَالْأَنفُسِ وَالثَّمَرَاتِ وَبَشِّرِ الصَّابِرِينَ",
+    "uzbek": "Albatta Biz sizlarni biroz qo'rquv, ochlik, mol-u jon va mevalar kamchiligi bilan sinaymiz. Sabr qiluvchilarga xushxabar ber!",
+    "topics": ["sabr", "sinaq", "musibat", "qiyinchilik"]
+  },
+  {
+    "id": 15,
+    "surah": 2,
+    "surah_name": "Baqara",
+    "ayat": 156,
+    "arabic": "الَّذِينَ إِذَا أَصَابَتْهُم مُّصِيبَةٌ قَالُوا إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ",
+    "uzbek": "Ular musibatga duch kelganida: 'Albatta biz Allohnikimiz va albatta Biz Unga qaytamiz' deydilar.",
+    "topics": ["sabr", "musibat", "istiroja", "tavakkul"]
+  },
+  {
+    "id": 16,
+    "surah": 2,
+    "surah_name": "Baqara",
+    "ayat": 177,
+    "arabic": "لَّيْسَ الْبِرَّ أَن تُوَلُّوا وُجُوهَكُمْ قِبَلَ الْمَشْرِقِ وَالْمَغْرِبِ وَلَٰكِنَّ الْبِرَّ مَنْ آمَنَ بِاللَّهِ وَالْيَوْمِ الْآخِرِ وَالْمَلَائِكَةِ وَالْكِتَابِ وَالنَّبِيِّينَ",
+    "uzbek": "Yaxshilik yuzlaringizni sharq va g'arbga burishingiz emas. Balki yaxshilik — Allohga, oxirat kuniga, farishtalarga, kitobga va payg'ambarlarga imon keltirgan kishidandir.",
+    "topics": ["birr", "imon", "yaxshilik", "axloq"]
+  },
+  {
+    "id": 17,
+    "surah": 2,
+    "surah_name": "Baqara",
+    "ayat": 183,
+    "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا كُتِبَ عَلَيْكُمُ الصِّيَامُ كَمَا كُتِبَ عَلَى الَّذِينَ مِن قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ",
+    "uzbek": "Ey imon keltirganlar! Sizlardan oldingilarga farz qilinganidek, sizlarga ham ro'za farz qilindi. Shoyadki taqvo qilsangiz.",
+    "topics": ["ro'za", "ramazon", "farz", "taqvo"]
+  },
+  {
+    "id": 18,
+    "surah": 2,
+    "surah_name": "Baqara",
+    "ayat": 185,
+    "arabic": "شَهْرُ رَمَضَانَ الَّذِي أُنزِلَ فِيهِ الْقُرْآنُ هُدًى لِّلنَّاسِ وَبَيِّنَاتٍ مِّنَ الْهُدَىٰ وَالْفُرْقَانِ",
+    "uzbek": "Ramazon oyi — Qur'on nozil qilingan oy. U odamlarga hidoyat va to'g'ri yo'lning bayonotlaridir.",
+    "topics": ["ramazon", "quron", "hidoyat"]
+  },
+  {
+    "id": 19,
+    "surah": 2,
+    "surah_name": "Baqara",
+    "ayat": 195,
+    "arabic": "وَأَنفِقُوا فِي سَبِيلِ اللَّهِ وَلَا تُلْقُوا بِأَيْدِيكُمْ إِلَى التَّهْلُكَةِ",
+    "uzbek": "Alloh yo'lida infaq qiling va o'z qo'lingiz bilan o'zingizni halokatga tashlamang.",
+    "topics": ["infaq", "sadaqa", "halokat"]
+  },
+  {
+    "id": 20,
+    "surah": 2,
+    "surah_name": "Baqara",
+    "ayat": 213,
+    "arabic": "كَانَ النَّاسُ أُمَّةً وَاحِدَةً فَبَعَثَ اللَّهُ النَّبِيِّينَ مُبَشِّرِينَ وَمُنذِرِينَ وَأَنزَلَ مَعَهُمُ الْكِتَابَ بِالْحَقِّ لِيَحْكُمَ بَيْنَ النَّاسِ",
+    "uzbek": "Odamlar bitta ummat edilar. Alloh payg'ambarlarni xushxabar beruvchi va ogohlantiruvchi qilib yubordi va ularga haq bilan hukm qilishlari uchun kitobni nozil qildi.",
+    "topics": ["payg'ambar", "kitob", "ummat", "haq"]
+  },
+  {
+    "id": 21,
+    "surah": 2,
+    "surah_name": "Baqara",
+    "ayat": 255,
+    "arabic": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ",
+    "uzbek": "Alloh — Undan boshqa iloh yo'q. U Tirik va Barcha narsani Boshqaruvchidir. Uni uyqu ham malol qilmaydi.",
+    "topics": ["kursiy", "alloh sifatlari", "tavhid", "hayot"]
+  },
+  {
+    "id": 22,
+    "surah": 2,
+    "surah_name": "Baqara",
+    "ayat": 256,
+    "arabic": "لَا إِكْرَاهَ فِي الدِّينِ قَد تَّبَيَّنَ الرُّشْدُ مِنَ الْغَيِّ",
+    "uzbek": "Dinda majburlash yo'q. To'g'ri yo'l adashishdan aniq ajraldi.",
+    "topics": ["din", "erkinlik", "iqtidor", "majburlash"]
+  },
+  {
+    "id": 23,
+    "surah": 2,
+    "surah_name": "Baqara",
+    "ayat": 263,
+    "arabic": "قَوْلٌ مَّعْرُوفٌ وَمَغْفِرَةٌ خَيْرٌ مِّن صَدَقَةٍ يَتْبَعُهَا أَذًى",
+    "uzbek": "Chiroyli so'z va kechirish — ozor yetkaziladigan sadaqadan yaxshiroqdir.",
+    "topics": ["sadaqa", "axloq", "ozor", "kechirish"]
+  },
+  {
+    "id": 24,
+    "surah": 2,
+    "surah_name": "Baqara",
+    "ayat": 286,
+    "arabic": "لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ",
+    "uzbek": "Alloh hech bir jonni imkoni yetmas narsaga majburlamaydi. Uning foydasi o'z qilgan amali, zarari ham o'z qilgan amalidandir.",
+    "topics": ["mas'uliyat", "imkoniyat", "qiyinchilik", "yengillik"]
+  },
+  {
+    "id": 25,
+    "surah": 3,
+    "surah_name": "Oli Imron",
+    "ayat": 13,
+    "arabic": "قَدْ كَانَ لَكُمْ آيَةٌ فِي فِئَتَيْنِ الْتَقَتَا فِئَةٌ تُقَاتِلُ فِي سَبِيلِ اللَّهِ وَأُخْرَى كَافِرَةٌ",
+    "uzbek": "Sizlar uchun to'qqon ikki guruhda oyat bor: biri Alloh yo'lida jang qilayotgan, ikkinchisi kofir bo'lgan guruh.",
+    "topics": ["jang", "sabr", "alloh yo'li", "g'alaba"]
+  },
+  {
+    "id": 26,
+    "surah": 3,
+    "surah_name": "Oli Imron",
+    "ayat": 14,
+    "arabic": "زُيِّنَ لِلنَّاسِ حُبُّ الشَّهَوَاتِ مِنَ النِّسَاءِ وَالْبَنِينَ وَالْقَنَاطِيرِ الْمُقَنطَرَةِ",
+    "uzbek": "Odamlarga narsalardan bo'lgan havas — ayollar, farzandlar, oltin-kumush yig'ilgan xazinachalar chiroyli qilib ko'rsatildi.",
+    "topics": ["dunyo", "havas", "nafs", "sinov"]
+  },
+  {
+    "id": 27,
+    "surah": 3,
+    "surah_name": "Oli Imron",
+    "ayat": 26,
+    "arabic": "قُلِ اللَّهُمَّ مَالِكَ الْمُلْكِ تُؤْتِي الْمُلْكَ مَن تَشَاءُ وَتَنزِعُ الْمُلْكَ مِمَّن تَشَاءُ",
+    "uzbek": "Ayting: 'Ey Alloh, hukmronlik Egasi! Hukmronlikni xohlaganingga berasiz va xohlaganingdan tortib olasiz.'",
+    "topics": ["hukmronlik", "qudrat", "takdir"]
+  },
+  {
+    "id": 28,
+    "surah": 3,
+    "surah_name": "Oli Imron",
+    "ayat": 31,
+    "arabic": "قُلْ إِن كُنتُمْ تُحِبُّونَ اللَّهَ فَاتَّبِعُونِي يُحْبِبْكُمُ اللَّهُ",
+    "uzbek": "Ayting: 'Agar Allohni sevsangiz, menga ergashingiz. Alloh sizni sevar va gunohlaringizni kechirar.'",
+    "topics": ["muhabbat", "payg'ambarga ergashish", "sevgi"]
+  },
+  {
+    "id": 29,
+    "surah": 3,
+    "surah_name": "Oli Imron",
+    "ayat": 139,
+    "arabic": "وَلَا تَهِنُوا وَلَا تَحْزَنُوا وَأَنتُمُ الْأَعْلَوْنَ إِن كُنتُم مُّؤْمِنِينَ",
+    "uzbek": "Bo'shashmang va qayg'urman. Agar mo'min bo'lsangiz, albatta sizlar ustunsiz.",
+    "topics": ["sabr", "kuch", "mo'min", "ustunlik"]
+  },
+  {
+    "id": 30,
+    "surah": 3,
+    "surah_name": "Oli Imron",
+    "ayat": 159,
+    "arabic": "فَبِمَا رَحْمَةٍ مِّنَ اللَّهِ لِنتَ لَهُمْ وَلَوْ كُنتَ فَظًّا غَلِيظَ الْقَلْبِ لَانفَضُّوا مِنْ حَوْلِكَ",
+    "uzbek": "Allohning rahmati bilan ularga yumshoq muomalada bo'lding. Agar qo'pol va qattiq qalbli bo'lsang, atrofingdan tarqalib ketar edilar.",
+    "topics": ["rahmat", "yumshoqlik", "axloq", "rahbarlik"]
+  },
+  {
+    "id": 31,
+    "surah": 4,
+    "surah_name": "Niso",
+    "ayat": 1,
+    "arabic": "يَا أَيُّهَا النَّاسُ اتَّقُوا رَبَّكُمُ الَّذِي خَلَقَكُم مِّن نَّفْسٍ وَاحِدَةٍ وَخَلَقَ مِنْهَا زَوْجَهَا",
+    "uzbek": "Ey odamlar! Rabbingizdan qo'rqingiz. U sizlarni bitta jondan yaratdi va undan uning juftini yaratdi.",
+    "topics": ["yaratilish", "odam", "taqvo", "juftlik"]
+  },
+  {
+    "id": 32,
+    "surah": 4,
+    "surah_name": "Niso",
+    "ayat": 36,
+    "arabic": "وَاعْبُدُوا اللَّهَ وَلَا تُشْرِكُوا بِهِ شَيْئًا وَبِالْوَالِدَيْنِ إِحْسَانًا",
+    "uzbek": "Allohga ibodat qiling va Unga hech narsani sherik qilmang. Ota-onaga yaxshilik qiling.",
+    "topics": ["ibodat", "shirk", "ota-ona", "yaxshilik"]
+  },
+  {
+    "id": 33,
+    "surah": 4,
+    "surah_name": "Niso",
+    "ayat": 59,
+    "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا أَطِيعُوا اللَّهَ وَأَطِيعُوا الرَّسُولَ وَأُولِي الْأَمْرِ مِنكُمْ",
+    "uzbek": "Ey imon keltirganlar! Allohga itoat qiling, Payg'ambarga itoat qiling va o'zingizdan bo'lgan hokimlarga itoat qiling.",
+    "topics": ["itoat", "alloh", "payg'ambar", "hokim"]
+  },
+  {
+    "id": 34,
+    "surah": 4,
+    "surah_name": "Niso",
+    "ayat": 75,
+    "arabic": "وَمَا لَكُمْ لَا تُقَاتِلُونَ فِي سَبِيلِ اللَّهِ وَالْمُسْتَضْعَفِينَ مِنَ الرِّجَالِ وَالنِّسَاءِ وَالْوِلْدَانِ",
+    "uzbek": "Nima uchun Alloh yo'lida va zaif erkaklar, ayollar hamda bolalar uchun jang qilmaysizlar?",
+    "topics": ["himoya", "zaiflar", "adolat", "kurash"]
+  },
+  {
+    "id": 35,
+    "surah": 4,
+    "surah_name": "Niso",
+    "ayat": 86,
+    "arabic": "وَإِذَا حُيِّيتُم بِتَحِيَّةٍ فَحَيُّوا بِأَحْسَنَ مِنْهَا أَوْ رُدُّوهَا",
+    "uzbek": "Sizga salom berilganda, undan yaxshiroq salom bering yoki o'shani qaytaring.",
+    "topics": ["salom", "axloq", "odob"]
+  },
+  {
+    "id": 36,
+    "surah": 4,
+    "surah_name": "Niso",
+    "ayat": 135,
+    "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا كُونُوا قَوَّامِينَ بِالْقِسْطِ شُهَدَاءَ لِلَّهِ",
+    "uzbek": "Ey imon keltirganlar! Adolatda mustahkam turinglar, Alloh uchun guvoh bo'linglar.",
+    "topics": ["adolat", "guvohlik", "haqqoniylik"]
+  },
+  {
+    "id": 37,
+    "surah": 5,
+    "surah_name": "Moida",
+    "ayat": 3,
+    "arabic": "الْيَوْمَ أَكْمَلْتُ لَكُمْ دِينَكُمْ وَأَتْمَمْتُ عَلَيْكُمْ نِعْمَتِي وَرَضِيتُ لَكُمُ الْإِسْلَامَ دِينًا",
+    "uzbek": "Bugun sizlarga dinigizni mukammal qildim va ne'matimni to'ldirdim. Sizlarga Islomni din qilib rozilik berdim.",
+    "topics": ["islom", "din", "mukammallik", "ne'mat"]
+  },
+  {
+    "id": 38,
+    "surah": 5,
+    "surah_name": "Moida",
+    "ayat": 8,
+    "arabic": "وَلَا يَجْرِمَنَّكُمْ شَنَآنُ قَوْمٍ عَلَىٰ أَلَّا تَعْدِلُوا اعْدِلُوا هُوَ أَقْرَبُ لِلتَّقْوَىٰ",
+    "uzbek": "Bir qavmga bo'lgan adovat sizni adolatsizlikka chorlamasin. Adolatli bo'ling, bu taqvoga yaqinroqdir.",
+    "topics": ["adolat", "adolatsizlik", "taqvo", "dushmanlik"]
+  },
+  {
+    "id": 39,
+    "surah": 5,
+    "surah_name": "Moida",
+    "ayat": 32,
+    "arabic": "مَن قَتَلَ نَفْسًا بِغَيْرِ نَفْسٍ أَوْ فَسَادٍ فِي الْأَرْضِ فَكَأَنَّمَا قَتَلَ النَّاسَ جَمِيعًا",
+    "uzbek": "Kim odam o'ldirsa — boshqa bir odam yoki yerda buzg'unlik uchun bo'lmasa — xuddi barcha odamlarni o'ldirgandek bo'ladi.",
+    "topics": ["qotillik", "hayot", "himoya", "jismoniy mas'uliyat"]
+  },
+  {
+    "id": 40,
+    "surah": 5,
+    "surah_name": "Moida",
+    "ayat": 38,
+    "arabic": "وَالسَّارِقُ وَالسَّارِقَةُ فَاقْطَعُوا أَيْدِيَهُمَا جَزَاءً بِمَا كَسَبَا نَكَالًا مِّنَ اللَّهِ",
+    "uzbek": "O'g'ri erkak va ayolning qo'llarini kesiling. Bu ularning qilgan amallari uchun jazodir.",
+    "topics": ["o'g'rilik", "jazo", "huquq"]
+  },
+  {
+    "id": 41,
+    "surah": 6,
+    "surah_name": "An'om",
+    "ayat": 59,
+    "arabic": "وَعِندَهُ مَفَاتِحُ الْغَيْبِ لَا يَعْلَمُهَا إِلَّا هُوَ",
+    "uzbek": "G'aybning kalitlari Uning huzuridaki, faqat U o'shani biladi.",
+    "topics": ["g'ayb", "ilim", "allohning ilmi"]
+  },
+  {
+    "id": 42,
+    "surah": 6,
+    "surah_name": "An'om",
+    "ayat": 162,
+    "arabic": "قُلْ إِنَّ صَلَاتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ",
+    "uzbek": "Ayting: 'Albatta mening namozim, ibodatim, hayotim va o'limim olamlarning Rabbi Allohnikidir.'",
+    "topics": ["ibodat", "hayot", "o'lim", "allohga bag'ishlash"]
+  },
+  {
+    "id": 43,
+    "surah": 7,
+    "surah_name": "A'rof",
+    "ayat": 31,
+    "arabic": "يَا بَنِي آدَمَ خُذُوا زِينَتَكُمْ عِندَ كُلِّ مَسْجِدٍ وَكُلُوا وَاشْرَبُوا وَلَا تُسْرِفُوا",
+    "uzbek": "Ey Odam farzandlari! Har bir namozda ziynatingizni oling. Yeying, iching ammo isrof qilmang.",
+    "topics": ["kiyinish", "isrof", "o'rtachalik", "ozuqa"]
+  },
+  {
+    "id": 44,
+    "surah": 7,
+    "surah_name": "A'rof",
+    "ayat": 199,
+    "arabic": "خُذِ الْعَفْوَ وَأْمُرْ بِالْعُرْفِ وَأَعْرِضْ عَنِ الْجَاهِلِينَ",
+    "uzbek": "Kechirishni odat qil, yaxshilikka buyur va johillardan yuz o'gir.",
+    "topics": ["kechirish", "yaxshilik", "johillik", "axloq"]
+  },
+  {
+    "id": 45,
+    "surah": 8,
+    "surah_name": "Anfol",
+    "ayat": 2,
+    "arabic": "إِنَّمَا الْمُؤْمِنُونَ الَّذِينَ إِذَا ذُكِرَ اللَّهُ وَجِلَتْ قُلُوبُهُمْ",
+    "uzbek": "Mo'minlar faqat o'shakilarkim, Alloh zikr qilinganda ularning qalblari qo'rqadi.",
+    "topics": ["mo'min", "zikr", "qalb", "qo'rquv"]
+  },
+  {
+    "id": 46,
+    "surah": 9,
+    "surah_name": "Tavba",
+    "ayat": 71,
+    "arabic": "وَالْمُؤْمِنُونَ وَالْمُؤْمِنَاتُ بَعْضُهُمْ أَوْلِيَاءُ بَعْضٍ يَأْمُرُونَ بِالْمَعْرُوفِ وَيَنْهَوْنَ عَنِ الْمُنكَرِ",
+    "uzbek": "Mo'min erkaklar va mo'min ayollar bir-birlarining do'stlaridir. Yaxshilikka buyuradi va yomonlikdan qaytaradi.",
+    "topics": ["mo'minlar", "do'stlik", "ma'ruf", "munkar"]
+  },
+  {
+    "id": 47,
+    "surah": 10,
+    "surah_name": "Yunus",
+    "ayat": 62,
+    "arabic": "أَلَا إِنَّ أَوْلِيَاءَ اللَّهِ لَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ",
+    "uzbek": "Ogoh bo'lingki, Allohning do'stlariga xavf yo'q va ular qayg'urmaydi.",
+    "topics": ["avliyo", "do'stlik", "xavfsizlik", "tinchlik"]
+  },
+  {
+    "id": 48,
+    "surah": 13,
+    "surah_name": "Ra'd",
+    "ayat": 28,
+    "arabic": "أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ",
+    "uzbek": "Bilingki, qalblar faqat Allohni zikr qilish bilan tinchlanadi.",
+    "topics": ["zikr", "qalb", "tinchlik", "xotirjamlik"]
+  },
+  {
+    "id": 49,
+    "surah": 14,
+    "surah_name": "Ibrohim",
+    "ayat": 7,
+    "arabic": "لَئِن شَكَرْتُمْ لَأَزِيدَنَّكُمْ وَلَئِن كَفَرْتُمْ إِنَّ عَذَابِي لَشَدِيدٌ",
+    "uzbek": "Agar shukr qilsangiz, albatta sizlarga ziyoda qilaman. Agar inkor qilsangiz, albatta Mening azobim qattiqdir.",
+    "topics": ["shukr", "ziyoda", "inkor", "azob"]
+  },
+  {
+    "id": 50,
+    "surah": 15,
+    "surah_name": "Hijr",
+    "ayat": 29,
+    "arabic": "فَإِذَا سَوَّيْتُهُ وَنَفَخْتُ فِيهِ مِن رُّوحِي فَقَعُوا لَهُ سَاجِدِينَ",
+    "uzbek": "Bas, uni shakllantirganimda va ruhimga puflaganimda, unga sajda qiling.",
+    "topics": ["odam yaratilishi", "sajda", "ruh"]
+  },
+  {
+    "id": 51,
+    "surah": 17,
+    "surah_name": "Isro",
+    "ayat": 23,
+    "arabic": "وَقَضَىٰ رَبُّكَ أَلَّا تَعْبُدُوا إِلَّا إِيَّاهُ وَبِالْوَالِدَيْنِ إِحْسَانًا",
+    "uzbek": "Rabbingiz faqat Unga ibodat qilishingizni va ota-onaga yaxshilik qilishingizni buyurdi.",
+    "topics": ["tavhid", "ota-ona", "yaxshilik", "ibodat"]
+  },
+  {
+    "id": 52,
+    "surah": 17,
+    "surah_name": "Isro",
+    "ayat": 24,
+    "arabic": "وَاخْفِضْ لَهُمَا جَنَاحَ الذُّلِّ مِنَ الرَّحْمَةِ وَقُل رَّبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا",
+    "uzbek": "Ularga mehribonlik bilan muxtor qanot tushing va ayting: 'Rabbim, ular meni kichikligimda tarbiya qilganlaridek ularni rahm qil.'",
+    "topics": ["ota-ona", "rahmat", "duo", "hurmat"]
+  },
+  {
+    "id": 53,
+    "surah": 17,
+    "surah_name": "Isro",
+    "ayat": 36,
+    "arabic": "وَلَا تَقْفُ مَا لَيْسَ لَكَ بِهِ عِلْمٌ إِنَّ السَّمْعَ وَالْبَصَرَ وَالْفُؤَادَ كُلُّ أُولَٰئِكَ كَانَ عَنْهُ مَسْئُولًا",
+    "uzbek": "Bilgan narsangga ergash. Albatta eshitish, ko'rish va qalb — bularning bari mas'uliyatlidir.",
+    "topics": ["ilim", "bilmaslik", "mas'uliyat", "tekshirish"]
+  },
+  {
+    "id": 54,
+    "surah": 20,
+    "surah_name": "Toha",
+    "ayat": 114,
+    "arabic": "وَقُل رَّبِّ زِدْنِي عِلْمًا",
+    "uzbek": "Va ayting: 'Rabbi, ilmimni ziyoda qil.'",
+    "topics": ["ilim", "duo", "ziyoda"]
+  },
+  {
+    "id": 55,
+    "surah": 21,
+    "surah_name": "Anbiyo",
+    "ayat": 107,
+    "arabic": "وَمَا أَرْسَلْنَاكَ إِلَّا رَحْمَةً لِّلْعَالَمِينَ",
+    "uzbek": "Biz seni faqat olamlarga rahmat qilib yubordik.",
+    "topics": ["rahmat", "payg'ambar", "olamlar"]
+  },
+  {
+    "id": 56,
+    "surah": 24,
+    "surah_name": "Nur",
+    "ayat": 35,
+    "arabic": "اللَّهُ نُورُ السَّمَاوَاتِ وَالْأَرْضِ",
+    "uzbek": "Alloh osmonlar va yerning nuridir.",
+    "topics": ["nur", "alloh", "osmon", "yer"]
+  },
+  {
+    "id": 57,
+    "surah": 24,
+    "surah_name": "Nur",
+    "ayat": 31,
+    "arabic": "وَقُل لِّلْمُؤْمِنَاتِ يَغْضُضْنَ مِنْ أَبْصَارِهِنَّ وَيَحْفَظْنَ فُرُوجَهُنَّ",
+    "uzbek": "Mo'min ayollarga aytingki, ko'zlarini taysin va farjlarini saqasin.",
+    "topics": ["hijob", "parda", "mo'min ayollar", "ko'zni tiyish"]
+  },
+  {
+    "id": 58,
+    "surah": 25,
+    "surah_name": "Furqon",
+    "ayat": 63,
+    "arabic": "وَعِبَادُ الرَّحْمَٰنِ الَّذِينَ يَمْشُونَ عَلَى الْأَرْضِ هَوْنًا وَإِذَا خَاطَبَهُمُ الْجَاهِلُونَ قَالُوا سَلَامًا",
+    "uzbek": "Rahmonning qullari yer yuzida oqilona yuradi va johillar ularga murojaat qilsa, 'Salom' deydi.",
+    "topics": ["qullik", "sabr", "johillar", "salom"]
+  },
+  {
+    "id": 59,
+    "surah": 28,
+    "surah_name": "Qasas",
+    "ayat": 77,
+    "arabic": "وَابْتَغِ فِيمَا آتَاكَ اللَّهُ الدَّارَ الْآخِرَةَ وَلَا تَنسَ نَصِيبَكَ مِنَ الدُّنْيَا",
+    "uzbek": "Alloh bergan narsalarda oxirat uyini qidir va dunyodagi ulushingni ham unutma.",
+    "topics": ["dunyo", "oxirat", "muvozanat", "taqvo"]
+  },
+  {
+    "id": 60,
+    "surah": 29,
+    "surah_name": "Ankabut",
+    "ayat": 69,
+    "arabic": "وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا",
+    "uzbek": "Bizning yo'limizda jihod qilganlarni albatta Yo'llarimizga boshlaymiz.",
+    "topics": ["jihod", "hidoyat", "sa'y-harakat"]
+  },
+  {
+    "id": 61,
+    "surah": 31,
+    "surah_name": "Luqmon",
+    "ayat": 14,
+    "arabic": "وَوَصَّيْنَا الْإِنسَانَ بِوَالِدَيْهِ حَمَلَتْهُ أُمُّهُ وَهْنًا عَلَىٰ وَهْنٍ",
+    "uzbek": "Biz odamzodni ota-onasi haqida vasiyat qildik. Onasi uni zaiflik ustiga zaiflik bilan ko'tardi.",
+    "topics": ["ota-ona", "ona", "vasiyat", "hurmat"]
+  },
+  {
+    "id": 62,
+    "surah": 31,
+    "surah_name": "Luqmon",
+    "ayat": 18,
+    "arabic": "وَلَا تُصَعِّرْ خَدَّكَ لِلنَّاسِ وَلَا تَمْشِ فِي الْأَرْضِ مَرَحًا إِنَّ اللَّهَ لَا يُحِبُّ كُلَّ مُخْتَالٍ فَخُورٍ",
+    "uzbek": "Odamlarga maqtanib yuz burma va yer yuzida maqtanib yurma. Alloh maqtanuvchi faxrni sevmaydi.",
+    "topics": ["takabbur", "maqtanchoqlik", "odob", "kibr"]
+  },
+  {
+    "id": 63,
+    "surah": 33,
+    "surah_name": "Ahzob",
+    "ayat": 21,
+    "arabic": "لَّقَدْ كَانَ لَكُمْ فِي رَسُولِ اللَّهِ أُسْوَةٌ حَسَنَةٌ",
+    "uzbek": "Albatta sizlar uchun Allohning Rasulida go'zal namuna bor.",
+    "topics": ["payg'ambar", "namuna", "sunna", "ergashish"]
+  },
+  {
+    "id": 64,
+    "surah": 33,
+    "surah_name": "Ahzob",
+    "ayat": 35,
+    "arabic": "إِنَّ الْمُسْلِمِينَ وَالْمُسْلِمَاتِ وَالْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ",
+    "uzbek": "Albatta musulmon erkaklar va musulmon ayollar, mo'min erkaklar va mo'min ayollar...",
+    "topics": ["musulmon", "mo'min", "erkaklar", "ayollar", "tenglik"]
+  },
+  {
+    "id": 65,
+    "surah": 39,
+    "surah_name": "Zumar",
+    "ayat": 53,
+    "arabic": "يَا عِبَادِيَ الَّذِينَ أَسْرَفُوا عَلَىٰ أَنفُسِهِمْ لَا تَقْنَطُوا مِن رَّحْمَةِ اللَّهِ",
+    "uzbek": "Ey Mening o'zlariga zo'ravonlik qilgan qullarim! Allohning rahmatidan umid uzman. Alloh barcha gunohlarni kechiradi.",
+    "topics": ["tavba", "rahmat", "gunoh", "umid"]
+  },
+  {
+    "id": 66,
+    "surah": 41,
+    "surah_name": "Fussilat",
+    "ayat": 34,
+    "arabic": "وَلَا تَسْتَوِي الْحَسَنَةُ وَلَا السَّيِّئَةُ ادْفَعْ بِالَّتِي هِيَ أَحْسَنُ",
+    "uzbek": "Yaxshilik va yomonlik teng emas. Yaxshilik bilan himoyalan.",
+    "topics": ["yaxshilik", "yomonlik", "sabr", "axloq"]
+  },
+  {
+    "id": 67,
+    "surah": 42,
+    "surah_name": "Shuro",
+    "ayat": 38,
+    "arabic": "وَالَّذِينَ اسْتَجَابُوا لِرَبِّهِمْ وَأَقَامُوا الصَّلَاةَ وَأَمْرُهُمْ شُورَىٰ بَيْنَهُمْ",
+    "uzbek": "Ular Rablariga ijobat qildi, namozni o'qidi va ularning ishlari o'zaro maslahat asosidadir.",
+    "topics": ["maslahat", "shuro", "jamoat", "namoz"]
+  },
+  {
+    "id": 68,
+    "surah": 49,
+    "surah_name": "Hujurot",
+    "ayat": 13,
+    "arabic": "يَا أَيُّهَا النَّاسُ إِنَّا خَلَقْنَاكُم مِّن ذَكَرٍ وَأُنثَىٰ وَجَعَلْنَاكُمْ شُعُوبًا وَقَبَائِلَ لِتَعَارَفُوا إِنَّ أَكْرَمَكُمْ عِندَ اللَّهِ أَتْقَاكُمْ",
+    "uzbek": "Ey odamlar! Biz sizlarni erkak va ayoldan yaratdik va o'zaro tanishishingiz uchun xalqlar va qabilalarga ajratdik. Alloh huzurida eng hurmatli — eng taqvodir.",
+    "topics": ["taqvo", "irq", "tenglik", "tanishish"]
+  },
+  {
+    "id": 69,
+    "surah": 53,
+    "surah_name": "Najm",
+    "ayat": 39,
+    "arabic": "وَأَن لَّيْسَ لِلْإِنسَانِ إِلَّا مَا سَعَىٰ",
+    "uzbek": "Inson faqat o'z sa'y-harakatiga ega.",
+    "topics": ["sa'y-harakat", "mehnat", "javobgarlik"]
+  },
+  {
+    "id": 70,
+    "surah": 55,
+    "surah_name": "Rohman",
+    "ayat": 13,
+    "arabic": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+    "uzbek": "Bas, Rabbingizning ne'matlarining qaysilarini inkor qilasizlar?",
+    "topics": ["ne'mat", "shukr", "rohman"]
+  },
+  {
+    "id": 71,
+    "surah": 57,
+    "surah_name": "Hadid",
+    "ayat": 20,
+    "arabic": "اعْلَمُوا أَنَّمَا الْحَيَاةُ الدُّنْيَا لَعِبٌ وَلَهْوٌ وَزِينَةٌ وَتَفَاخُرٌ بَيْنَكُمْ وَتَكَاثُرٌ فِي الْأَمْوَالِ وَالْأَوْلَادِ",
+    "uzbek": "Bilingki, dunyo hayoti — o'yin, o'yin-kulgi, ziynat, o'zaro faxrlanish va mol-farzand ko'paytirishdir.",
+    "topics": ["dunyo", "o'yin", "faxr", "mol-farzand"]
+  },
+  {
+    "id": 72,
+    "surah": 59,
+    "surah_name": "Hashr",
+    "ayat": 18,
+    "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا اتَّقُوا اللَّهَ وَلْتَنظُرْ نَفْسٌ مَّا قَدَّمَتْ لِغَدٍ",
+    "uzbek": "Ey imon keltirganlar! Allohdan qo'rqing va har bir jon ertaga uchun nima tayyorlaganiga qarasin.",
+    "topics": ["taqvo", "ertaga", "hisob", "tayyorgarlik"]
+  },
+  {
+    "id": 73,
+    "surah": 64,
+    "surah_name": "Tag'obun",
+    "ayat": 16,
+    "arabic": "فَاتَّقُوا اللَّهَ مَا اسْتَطَعْتُمْ وَاسْمَعُوا وَأَطِيعُوا وَأَنفِقُوا خَيْرًا لِّأَنفُسِكُمْ",
+    "uzbek": "Bas, qodir bo'lganingizcha Allohdan qo'rqing, eshiting, itoat qiling va infaq qiling — o'zingiz uchun yaxshiroq.",
+    "topics": ["taqvo", "itoat", "infaq", "eshtish"]
+  },
+  {
+    "id": 74,
+    "surah": 65,
+    "surah_name": "Taloq",
+    "ayat": 3,
+    "arabic": "وَمَن يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ",
+    "uzbek": "Kim Allohga tavakkal qilsa, Alloh unga yetarlidir.",
+    "topics": ["tavakkul", "ishonch", "yetarlilik"]
+  },
+  {
+    "id": 75,
+    "surah": 93,
+    "surah_name": "Duhu",
+    "ayat": 3,
+    "arabic": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ",
+    "uzbek": "Rabbing seni tark qilmadi va seni yoqtirmadi.",
+    "topics": ["g'amginlik", "umid", "alloh mehr"]
+  },
+  {
+    "id": 76,
+    "surah": 93,
+    "surah_name": "Duhu",
+    "ayat": 5,
+    "arabic": "وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰ",
+    "uzbek": "Albatta Rabbing senga beradi va sen rozi bo'lasan.",
+    "topics": ["umid", "berilish", "roziqlik"]
+  },
+  {
+    "id": 77,
+    "surah": 94,
+    "surah_name": "Sharh",
+    "ayat": 6,
+    "arabic": "إِنَّ مَعَ الْعُسْرِ يُسْرًا",
+    "uzbek": "Albatta qiyinchilik bilan birga osonlik bor.",
+    "topics": ["qiyinchilik", "osonlik", "sabr", "umid"]
+  },
+  {
+    "id": 78,
+    "surah": 96,
+    "surah_name": "Alaq",
+    "ayat": 1,
+    "arabic": "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ",
+    "uzbek": "O'qiyotgan Rabbing nomi bilan. U yaratdi.",
+    "topics": ["o'qish", "ilim", "yaratilish"]
+  },
+  {
+    "id": 79,
+    "surah": 98,
+    "surah_name": "Bayyina",
+    "ayat": 5,
+    "arabic": "وَمَا أُمِرُوا إِلَّا لِيَعْبُدُوا اللَّهَ مُخْلِصِينَ لَهُ الدِّينَ",
+    "uzbek": "Ular faqat Allohga dinni xolis qilib ibodat qilishlari uchun buyurildilar.",
+    "topics": ["xulq", "ibodat", "ixlos"]
+  },
+  {
+    "id": 80,
+    "surah": 103,
+    "surah_name": "Asr",
+    "ayat": 1,
+    "arabic": "وَالْعَصْرِ إِنَّ الْإِنسَانَ لَفِي خُسْرٍ إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ",
+    "uzbek": "Asrga qasamki, albatta inson ziyondadir. Faqat imon keltirgan, solih amal qilgan, haqqa tavsiya bergan va sabrga tavsiya berganlar bundan mustasno.",
+    "topics": ["vaqt", "ziyon", "imon", "solih amal", "sabr"]
+  },
+  {
+    "id": 81,
+    "surah": 107,
+    "surah_name": "Ma'un",
+    "ayat": 1,
+    "arabic": "أَرَأَيْتَ الَّذِي يُكَذِّبُ بِالدِّينِ فَذَٰلِكَ الَّذِي يَدُعُّ الْيَتِيمَ وَلَا يَحُضُّ عَلَىٰ طَعَامِ الْمِسْكِينِ",
+    "uzbek": "Dinni yolg'on deb hisoblagan kishini ko'rdingmi? U yetimni qo'pol suradi va miskinni ovqatlantirishga undamaydi.",
+    "topics": ["din", "yetim", "miskin", "axloq"]
+  },
+  {
+    "id": 82,
+    "surah": 112,
+    "surah_name": "Ixlos",
+    "ayat": 1,
+    "arabic": "قُلْ هُوَ اللَّهُ أَحَدٌ اللَّهُ الصَّمَدُ لَمْ يَلِدْ وَلَمْ يُولَدْ وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ",
+    "uzbek": "Ayting: U — Alloh — Yakka-durd. Alloh — Behojat. U tug'magan va tug'ilmagan. Va Unga teng hech kim yo'q.",
+    "topics": ["tavhid", "ixlos", "yakka", "alloh sifatlari"]
+  },
+  {
+    "id": 83,
+    "surah": 36,
+    "surah_name": "Yosin",
+    "ayat": 11,
+    "arabic": "إِنَّمَا تُنذِرُ مَنِ اتَّبَعَ الذِّكْرَ وَخَشِيَ الرَّحْمَٰنَ بِالْغَيْبِ",
+    "uzbek": "Faqat zikrga ergashgan va g'aybda Rahmandan qo'rqqan kishini ogohlantirasiz.",
+    "topics": ["ogohlantirish", "zikr", "taqvo", "g'ayb"]
+  },
+  {
+    "id": 84,
+    "surah": 36,
+    "surah_name": "Yosin",
+    "ayat": 58,
+    "arabic": "سَلَامٌ قَوْلًا مِّن رَّبٍّ رَّحِيمٍ",
+    "uzbek": "Salom! — Mehribon Rabbingning so'zi.",
+    "topics": ["salom", "jannat", "rahmat"]
+  },
+  {
+    "id": 85,
+    "surah": 50,
+    "surah_name": "Qof",
+    "ayat": 16,
+    "arabic": "وَنَحْنُ أَقْرَبُ إِلَيْهِ مِنْ حَبْلِ الْوَرِيدِ",
+    "uzbek": "Biz insonning bo'yin tomiridan yaqinroqmiz.",
+    "topics": ["yaqinlik", "alloh bilishi", "nazorat"]
+  },
+  {
+    "id": 86,
+    "surah": 22,
+    "surah_name": "Hajj",
+    "ayat": 37,
+    "arabic": "لَن يَنَالَ اللَّهَ لُحُومُهَا وَلَا دِمَاؤُهَا وَلَٰكِن يَنَالُهُ التَّقْوَىٰ مِنكُمْ",
+    "uzbek": "Ularning go'shtlari va qonlari Allohga yetmaydi, faqat sizlardan taqvo yetadi.",
+    "topics": ["qurbat", "taqvo", "niyyat", "ibodat"]
+  },
+  {
+    "id": 87,
+    "surah": 22,
+    "surah_name": "Hajj",
+    "ayat": 46,
+    "arabic": "فَإِنَّهَا لَا تَعْمَى الْأَبْصَارُ وَلَٰكِن تَعْمَى الْقُلُوبُ الَّتِي فِي الصُّدُورِ",
+    "uzbek": "Ko'zlar ko'r emas, lekin ko'krakdagi qalblar ko'rdir.",
+    "topics": ["qalb", "ko'rish", "hidoyat", "basirat"]
+  },
+  {
+    "id": 88,
+    "surah": 2,
+    "surah_name": "Baqara",
+    "ayat": 269,
+    "arabic": "يُؤْتِي الْحِكْمَةَ مَن يَشَاءُ وَمَن يُؤْتَ الْحِكْمَةَ فَقَدْ أُوتِيَ خَيْرًا كَثِيرًا",
+    "uzbek": "Alloh hikmatni xohlaganiga beradi. Kim hikmat berilsa, albatta unga ko'p yaxshilik berilgan.",
+    "topics": ["hikmat", "ilim", "yaxshilik"]
+  },
+  {
+    "id": 89,
+    "surah": 3,
+    "surah_name": "Oli Imron",
+    "ayat": 17,
+    "arabic": "الصَّابِرِينَ وَالصَّادِقِينَ وَالْقَانِتِينَ وَالْمُنفِقِينَ وَالْمُسْتَغْفِرِينَ بِالْأَسْحَارِ",
+    "uzbek": "Sabr qiluvchilar, rostgo'ylar, itoatkorlar, infaq qiluvchilar va saharlarda istig'for qiluvchilar.",
+    "topics": ["sabr", "rostgo'ylik", "itoat", "infaq", "istig'for"]
+  },
+  {
+    "id": 90,
+    "surah": 6,
+    "surah_name": "An'om",
+    "ayat": 151,
+    "arabic": "قُلْ تَعَالَوْا أَتْلُ مَا حَرَّمَ رَبُّكُمْ أَلَّا تُشْرِكُوا بِهِ شَيْئًا وَبِالْوَالِدَيْنِ إِحْسَانًا وَلَا تَقْتُلُوا أَوْلَادَكُم مِّنْ إِمْلَاقٍ",
+    "uzbek": "Ayting: 'Kelinglar, Rabbingiz narsalarni harom qilganini o'qiyman: Unga hech narsani sherik qilmang, ota-onaga yaxshilik qiling va bolalaringizni kamchilikdan o'ldirmang.'",
+    "topics": ["harom", "shirk", "ota-ona", "bolalar", "qotillik"]
+  }
+]

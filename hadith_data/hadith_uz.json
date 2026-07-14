@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "collection": "Buxoriy",
+    "hadith_number": 1,
+    "narrator": "Umar ibn Xattob",
+    "arabic": "إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى",
+    "uzbek": "Amallar niyatlarga bog'liqdir. Har bir kishi uchun faqat niyat qilgan narsa bor.",
+    "topics": ["niyat", "amal", "ixlos"]
+  },
+  {
+    "id": 2,
+    "collection": "Buxoriy",
+    "hadith_number": 2,
+    "narrator": "Umar ibn Xattob",
+    "arabic": "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ",
+    "uzbek": "Kim Allohga va oxirat kuniga imon keltirsa, yaxshi so'z aytsin yoki jim tursin.",
+    "topics": ["til", "so'z", "jim turish", "axloq"]
+  },
+  {
+    "id": 3,
+    "collection": "Buxoriy",
+    "hadith_number": 3,
+    "narrator": "Abu Hurayra",
+    "arabic": "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الآخِرِ فَلْيُكْرِمْ ضَيْفَهُ",
+    "uzbek": "Kim Allohga va oxirat kuniga imon keltirsa, mehmonini izzatlatsin.",
+    "topics": ["mehmon", "musofir", "axloq", "ikkatlik"]
+  },
+  {
+    "id": 4,
+    "collection": "Buxoriy",
+    "hadith_number": 13,
+    "narrator": "Anas",
+    "arabic": "لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ",
+    "uzbek": "Sizlardan birontangiz o'zi uchun yoqtirgan narsani birodariga ham yoqtirmaguncha mo'min bo'la olmaydi.",
+    "topics": ["mo'minlik", "birodarlik", "sevgi", "axloq"]
+  },
+  {
+    "id": 5,
+    "collection": "Buxoriy",
+    "hadith_number": 15,
+    "narrator": "Abu Hurayra",
+    "arabic": "مَنْ سَلَكَ طَرِيقًا يَلْتَمِسُ فِيهِ عِلْمًا سَهَّلَ اللَّهُ لَهُ طَرِيقًا إِلَى الْجَنَّةِ",
+    "uzbek": "Kim ilm izlab yo'lga chiqsa, Alloh unga jannatga yo'l osonlashtiradi.",
+    "topics": ["ilim", "jannat", "talab", "yo'l"]
+  },
+  {
+    "id": 6,
+    "collection": "Buxoriy",
+    "hadith_number": 37,
+    "narrator": "Abu Hurayra",
+    "arabic": "مَنْ تَطَوَّعَ بِصَلاَةٍ فِي جَوْفِ اللَّيْلِ خَيْرٌ لَهُ مِنَ الدُّنْيَا وَمَا عَلَيْهَا",
+    "uzbek": "Kim kechasi ixtiyoriy namoz o'qisa, bu unga dunyo va uning ichidagi narsalardan yaxshiroqdir.",
+    "topics": ["tahajjud", "kechasi namoz", "ixtiyoriy ibodat", "savob"]
+  },
+  {
+    "id": 7,
+    "collection": "Muslim",
+    "hadith_number": 45,
+    "narrator": "Abu Hurayra",
+    "arabic": "الْمُسْلِمُ مَنْ سَلِمَ الْمُسْلِمُونَ مِنْ لِسَانِهِ وَيَدِهِ",
+    "uzbek": "Musulmon — boshqa musulmonlar uning tili va qo'lidan omonlikda bo'lgan kishidir.",
+    "topics": ["musulmon", "omonlik", "til", "qo'l"]
+  },
+  {
+    "id": 8,
+    "collection": "Buxoriy",
+    "hadith_number": 60,
+    "narrator": "Abu Hurayra",
+    "arabic": "مَنْ قَامَ لَيْلَةَ الْقَدْرِ إِيمَانًا وَاحْتِسَابًا غُفِرَ لَهُ مَا تَقَدَّمَ مِنْ ذَنْبِهِ",
+    "uzbek": "Kim Laylatul Qadr kechasini imon bilan va mukofot kutgan holda turib o'tkazsa, uning avvalgi gunohlari kechiriladi.",
+    "topics": ["laylatul qadr", "ramazon", "gunoh kechirish", "savob"]
+  },
+  {
+    "id": 9,
+    "collection": "Buxoriy",
+    "hadith_number": 75,
+    "narrator": "Abu Hurayra",
+    "arabic": "مَنْ صَامَ رَمَضَانَ إِيمَانًا وَاحْتِسَابًا غُفِرَ لَهُ مَا تَقَدَّمَ مِنْ ذَنْبِهِ",
+    "uzbek": "Kim Ramazonni imon bilan va mukofot kutgan holda ro'za tutsa, uning avvalgi gunohlari kechiriladi.",
+    "topics": ["ro'za", "ramazon", "gunoh kechirish", "savob"]
+  },
+  {
+    "id": 10,
+    "collection": "Muslim",
+    "hadith_number": 100,
+    "narrator": "Abu Hurayra",
+    "arabic": "طُوبَى لِمَنْ هَدَاهُ اللَّهُ لِلإِسْلاَمِ وَكَانَ رِزْقُهُ كَفَافًا وَقَنَعَ بِهِ",
+    "uzbek": "Baxtlidirk — Alloh uni Islomga hidoyat qilgan, rizqi yetarli bo'lgan va shunga qanoat qilgan kishi.",
+    "topics": ["qanoat", "islom", "rizq", "baxt"]
+  },
+  {
+    "id": 11,
+    "collection": "Buxoriy",
+    "hadith_number": 131,
+    "narrator": "Abdulloh ibn Amr",
+    "arabic": "الرَّاحِمُونَ يَرْحَمُهُمُ الرَّحْمَنُ ارْحَمُوا أَهْلَ الأَرْضِ يَرْحَمْكُمْ مَنْ فِي السَّمَاءِ",
+    "uzbek": "Rahm qiluvchilarga Mehribon Alloh rahm qiladi. Yer aholisiga rahm qilingki, osmon aholisi sizga rahm qilsin.",
+    "topics": ["rahmat", "mehribonlik", "odob"]
+  },
+  {
+    "id": 12,
+    "collection": "Tirmiziy",
+    "hadith_number": 2004,
+    "narrator": "Abu Dardo",
+    "arabic": "اطْلُبُوا الْعِلْمَ وَلَوْ بِالصِّينِ",
+    "uzbek": "Ilmni izlang, hatto Xitoyda bo'lsa ham.",
+    "topics": ["ilim", "talab", "safar"]
+  },
+  {
+    "id": 13,
+    "collection": "Buxoriy",
+    "hadith_number": 524,
+    "narrator": "Abu Hurayra",
+    "arabic": "صَلاَةُ الْجَمَاعَةِ تَفْضُلُ صَلاَةَ الْفَذِّ بِسَبْعٍ وَعِشْرِينَ دَرَجَةً",
+    "uzbek": "Jamoat bilan o'qilgan namoz yolg'iz o'qilgan namozdan yigirma yetti daraja afzaldir.",
+    "topics": ["jamoat namoz", "namoz", "savob", "afzallik"]
+  },
+  {
+    "id": 14,
+    "collection": "Muslim",
+    "hadith_number": 1031,
+    "narrator": "Abu Hurayra",
+    "arabic": "مَنْ نَفَّسَ عَنْ مُؤْمِنٍ كُرْبَةً مِنْ كُرَبِ الدُّنْيَا نَفَّسَ اللَّهُ عَنْهُ كُرْبَةً مِنْ كُرَبِ يَوْمِ الْقِيَامَةِ",
+    "uzbek": "Kim mo'min birodarining bir dunyo tashvishini yengillashtirsa, Alloh uning qiyomat kunidagi tashvishini yengillashtiradi.",
+    "topics": ["yordam", "mo'min", "qiyomat", "tashvish"]
+  },
+  {
+    "id": 15,
+    "collection": "Buxoriy",
+    "hadith_number": 2227,
+    "narrator": "Abu Hurayra",
+    "arabic": "مَنْ لَمْ يَدَعْ قَوْلَ الزُّورِ وَالْعَمَلَ بِهِ فَلَيْسَ لِلَّهِ حَاجَةٌ أَنْ يَدَعَ طَعَامَهُ وَشَرَابَهُ",
+    "uzbek": "Kim yolg'on so'zni va unda amal qilishni tark etmasa, Allohga uning ovqat-ichimligini tark qilishiga hojat yo'q.",
+    "topics": ["ro'za", "yolg'on", "axloq", "haqiqiy ro'za"]
+  },
+  {
+    "id": 16,
+    "collection": "Buxoriy",
+    "hadith_number": 11,
+    "narrator": "Abu Hurayra",
+    "arabic": "حُفَّتِ الْجَنَّةُ بِالْمَكَارِهِ وَحُفَّتِ النَّارُ بِالشَّهَوَاتِ",
+    "uzbek": "Jannat noxush narsalar bilan o'ralgan va do'zax nafs istaklari bilan o'ralgan.",
+    "topics": ["jannat", "do'zax", "nafs", "qiyinchilik"]
+  },
+  {
+    "id": 17,
+    "collection": "Buxoriy",
+    "hadith_number": 6476,
+    "narrator": "Abu Hurayra",
+    "arabic": "إِنَّ اللَّهَ لاَ يَنْظُرُ إِلَى صُوَرِكُمْ وَأَمْوَالِكُمْ وَلَكِنْ يَنْظُرُ إِلَى قُلُوبِكُمْ وَأَعْمَالِكُمْ",
+    "uzbek": "Alloh sizlarning suratlaringizga va mollaringizga qaramaydi, balki qalblaringizga va amallaringizga qaraydi.",
+    "topics": ["qalb", "amal", "niyyat", "alloh nazar"]
+  },
+  {
+    "id": 18,
+    "collection": "Muslim",
+    "hadith_number": 2865,
+    "narrator": "Ibn Umar",
+    "arabic": "بُنِيَ الإِسْلاَمُ عَلَى خَمْسٍ",
+    "uzbek": "Islom besh narsa ustiga qurilgan: Allohdan boshqa iloh yo'qligi va Muhammad Allohning Rasuli ekaniga guvohlik berish, namozni o'qish, zakotni berish, haj qilish va Ramazon ro'zasini tutish.",
+    "topics": ["islom asoslari", "besh ustun", "kalima", "namoz", "zakot", "haj", "ro'za"]
+  },
+  {
+    "id": 19,
+    "collection": "Buxoriy",
+    "hadith_number": 6226,
+    "narrator": "Abu Hurayra",
+    "arabic": "مَنْ قَالَ سُبْحَانَ اللَّهِ وَبِحَمْدِهِ مِائَةَ مَرَّةٍ حُطَّتْ خَطَايَاهُ",
+    "uzbek": "Kim 'Subhanallohi va bihamdihi'ni yuz marta aytsa, uning gunohlari dengiz ko'pigidek bo'lsa ham kechiriladi.",
+    "topics": ["tasbeh", "zikr", "gunoh kechirish"]
+  },
+  {
+    "id": 20,
+    "collection": "Muslim",
+    "hadith_number": 2674,
+    "narrator": "Abu Hurayra",
+    "arabic": "اتَّقِ اللَّهَ حَيْثُمَا كُنتَ وَأَتْبِعِ السَّيِّئَةَ الْحَسَنَةَ تَمْحُهَا وَخَالِقِ النَّاسَ بِخُلُقٍ حَسَنٍ",
+    "uzbek": "Qayerda bo'lsang ham Allohdan qo'rq. Yomonlikning ortidan yaxshilik qilki, u o'chirsin. Odamlar bilan chiroyli axloq munosabatida bo'l.",
+    "topics": ["taqvo", "yaxshilik", "axloq", "odob"]
+  },
+  {
+    "id": 21,
+    "collection": "Buxoriy",
+    "hadith_number": 1462,
+    "narrator": "Abu Hurayra",
+    "arabic": "مَا نَقَصَتْ صَدَقَةٌ مِنْ مَالٍ",
+    "uzbek": "Sadaqa molni kamaytirmaydi.",
+    "topics": ["sadaqa", "mol", "baraka", "infaq"]
+  },
+  {
+    "id": 22,
+    "collection": "Buxoriy",
+    "hadith_number": 6205,
+    "narrator": "Abu Hurayra",
+    "arabic": "أَقْرَبُ مَا يَكُونُ الْعَبْدُ مِنْ رَبِّهِ وَهُوَ سَاجِدٌ فَأَكْثِرُوا الدُّعَاءَ",
+    "uzbek": "Qul Rabbiga sajda holatida eng yaqin bo'ladi. Bas, duoni ko'paytiring.",
+    "topics": ["sajda", "duo", "yaqinlik", "namoz"]
+  },
+  {
+    "id": 23,
+    "collection": "Muslim",
+    "hadith_number": 2699,
+    "narrator": "Abu Hurayra",
+    "arabic": "الدُّعَاءُ هُوَ الْعِبَادَةُ",
+    "uzbek": "Duo — ibodatning o'zidir.",
+    "topics": ["duo", "ibodat", "ulush"]
+  },
+  {
+    "id": 24,
+    "collection": "Buxoriy",
+    "hadith_number": 596,
+    "narrator": "Aisha",
+    "arabic": "أَحَبُّ الأَعْمَالِ إِلَى اللَّهِ أَدْوَمُهَا وَإِنْ قَلَّ",
+    "uzbek": "Allohga eng sevimli amallar eng doimiy bo'lganlaridir, hatto oz bo'lsa ham.",
+    "topics": ["doimiy amal", "oz amal", "sevimli", "bardo'shtlik"]
+  },
+  {
+    "id": 25,
+    "collection": "Buxoriy",
+    "hadith_number": 3317,
+    "narrator": "Ibn Umar",
+    "arabic": "كُلُّكُمْ رَاعٍ وَكُلُّكُمْ مَسْئُولٌ عَنْ رَعِيَّتِهِ",
+    "uzbek": "Hammingiz cho'ponlarsiz va hammingiz podangizdan mas'ulsiz.",
+    "topics": ["mas'uliyat", "cho'pon", "rahbarlik", "hisob"]
+  },
+  {
+    "id": 26,
+    "collection": "Muslim",
+    "hadith_number": 2688,
+    "narrator": "Abu Hurayra",
+    "arabic": "لاَ يَدْخُلُ الْجَنَّةَ مَنْ لاَ يَأْمَنُ جَارُهُ بَوَائِقَهُ",
+    "uzbek": "Qo'shnisi uning shararlaridan omonlikda bo'lmagan kishi jannatga kirmaydi.",
+    "topics": ["qo'shni", "omonlik", "jannat", "axloq"]
+  },
+  {
+    "id": 27,
+    "collection": "Muslim",
+    "hadith_number": 6737,
+    "narrator": "Ibn Mas'ud",
+    "arabic": "عَلَيْكُمْ بِالصِّدْقِ فَإِنَّ الصِّدْقَ يَهْدِي إِلَى الْبِرِّ",
+    "uzbek": "Rostgo'ylikni ushlang, chunki rostgo'ylik yaxshilikka boshlaydi va yaxshilik jannatga boshlaydi.",
+    "topics": ["rostgo'ylik", "yaxshilik", "jannat", "sidq"]
+  },
+  {
+    "id": 28,
+    "collection": "Buxoriy",
+    "hadith_number": 6025,
+    "narrator": "Nu'mon ibn Bishr",
+    "arabic": "مَثَلُ الْمُؤْمِنِينَ فِي تَوَادِّهِمْ وَتَرَاحُمِهِمْ مَثَلُ الْجَسَدِ",
+    "uzbek": "Mo'minlarning o'zaro mehr-oqibat va rahm-shafqatlaridagi misoli — bir tan misolidir. Bir a'zo shikoyat qilsa, qolgan tan uning giyohvoni bilan birga tong otqazadi.",
+    "topics": ["mo'minlar", "birlik", "rahmat", "jism misol"]
+  },
+  {
+    "id": 29,
+    "collection": "Buxoriy",
+    "hadith_number": 7026,
+    "narrator": "Abu Hurayra",
+    "arabic": "إِيَّاكُمْ وَالظَّنَّ فَإِنَّ الظَّنَّ أَكْذَبُ الْحَدِيثِ",
+    "uzbek": "Gumondan ehtiyot bo'ling, chunki gumon eng katta yolg'ondir.",
+    "topics": ["gumon", "yolg'on", "ehtiyot", "axloq"]
+  },
+  {
+    "id": 30,
+    "collection": "Buxoriy",
+    "hadith_number": 6529,
+    "narrator": "Abu Hurayra",
+    "arabic": "يَدُ اللَّهِ مَعَ الْجَمَاعَةِ",
+    "uzbek": "Allohning yordami jamoat bilan birga.",
+    "topics": ["jamoat", "birlashish", "yordam"]
+  }
+]
