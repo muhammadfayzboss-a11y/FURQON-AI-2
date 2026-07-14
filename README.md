@@ -2,7 +2,8 @@
 
 ![FURQON AI](https://img.shields.io/badge/FURQON-AI-green?style=for-the-badge&logo=telegram)
 ![Python](https://img.shields.io/badge/Python-3.11-blue?style=flat-square&logo=python)
-![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o--mini-purple?style=flat-square&logo=openai)
+![Gemini](https://img.shields.io/badge/Google-Gemini-orange?style=flat-square&logo=google)
+![Bepul](https://img.shields.io/badge/Narx-BEPUL-success?style=flat-square)
 
 ## 📖 Loyiha haqida
 
@@ -10,12 +11,13 @@
 
 ### ✅ Xususiyatlari
 
-- 🤖 **AI tushunish** — Savolning ma'nosini AI orqali tahlil qiladi
+- 🤖 **AI tushunish** — Google Gemini yordamida savolning ma'nosini tahlil qiladi
 - 📖 **Qur'on oyatlari** — 90+ oyatlar bazasi (o'zbek va arabcha)
 - 📚 **Hadislar** — 30+ hadislar bazasi (Buxoriy, Muslim, Tirmiziy, va boshqalar)
 - 🔍 **Aqlli qidiruv** — Mavzu, kalit so'z va matn bo'yicha qidirish
 - 🎲 **Tasodifiy oyat/hadis** — Har kungi ilhom olish
 - 📱 **Telegram interfeys** — Qulay tugmalar va menyular
+- 💰 **100% BEPUL** — Google Gemini bepul ishlaydi!
 
 ## 🚀 O'rnatish
 
@@ -50,13 +52,13 @@ cp .env.example .env
 
 ```env
 TELEGRAM_BOT_TOKEN=your_telegram_bot_token
-OPENAI_API_KEY=your_openai_api_key
+GEMINI_API_KEY=your_gemini_api_key
 ```
 
-#### Tokenlarni olish:
+#### Tokenlarni olish (BEPUL!):
 
-- **Telegram Bot Token**: [@BotFather](https://t.me/BotFather) ga murojaat qiling
-- **OpenAI API Key**: [platform.openai.com](https://platform.openai.com/api-keys) dan oling
+1. **Telegram Bot Token**: [@BotFather](https://t.me/BotFather) ga murojaat qiling
+2. **Google Gemini API Key**: [aistudio.google.com/apikey](https://aistudio.google.com/apikey) dan bepul oling
 
 ### 5. Botni ishga tushirish
 
@@ -73,7 +75,7 @@ docker build -t furqon-ai .
 # Ishga tushirish
 docker run -d --name furqon-ai \
   -e TELEGRAM_BOT_TOKEN=your_token \
-  -e OPENAI_API_KEY=your_key \
+  -e GEMINI_API_KEY=your_key \
   furqon-ai
 ```
 
@@ -82,7 +84,7 @@ docker run -d --name furqon-ai \
 ```
 FURQON-AI-2/
 ├── bot.py                  # Asosiy Telegram bot
-├── ai_handler.py           # AI bilan ishlash (OpenAI)
+├── ai_handler.py           # AI bilan ishlash (Google Gemini)
 ├── search_engine.py        # Qidiruv tizimi
 ├── config.py               # Konfiguratsiya
 ├── quran_data/
@@ -121,24 +123,16 @@ FURQON-AI-2/
 ## ⚙️ Ishlash printsipi
 
 1. **Savol qabul qilinadi** → Foydalanuvchi savol yozadi
-2. **AI tahlil** → OpenAI savolni tushunib, mavzularni aniqlaydi
+2. **AI tahlil** → Google Gemini savolni tushunib, mavzularni aniqlaydi
 3. **Qidiruv** → Mavzular bo'yicha Qur'on va Hadislardan mos javoblar topiladi
 4. **AI javob** → Topilgan oyatlar va hadislar asosida AI tushunarli javob yaratadi
 5. **Natija** → Formatlangan javob foydalanuvchiga yuboriladi
 
-## 📊 Ma'lumotlar bazasi
+## 💰 Narx: BEPUL!
 
-### Qur'on oyatlari: 90+ 
-- Fotihadan boshlab turli suralardan
-- Arabcha + O'zbekcha tarjima
-- Mavzular bo'yicha teglangan
-
-### Hadislar: 30+
-- Buxoriy, Muslim, Tirmiziy, Abu Dovud, Ahmad to'plamlari
-- Arabcha + O'zbekcha tarjima
-- Raviylar va mavzular ko'rsatilgan
-
-> 💡 Ma'lumotlar bazasini kengaytirish uchun JSON fayllariga yangi oyat va hadislar qo'shishingiz mumkin.
+- **Google Gemini API** — kuniga 1500+ so'rov bepul ✅
+- **Telegram Bot API** — butunlay bepul ✅
+- **Hosting** — Render/Railway free tier ishlatish mumkin ✅
 
 ## ⚠️ Muhim eslatma
 

@@ -1,12 +1,13 @@
 """
 FURQON AI - AI Handler
-OpenAI yordamida savolni tushunib, mos Qur'on oyatlari va Hadislarni topish
+Google Gemini yordamida savolni tushunib, mos Qur'on oyatlari va Hadislarni topish
+BEPUL — https://aistudio.google.com/apikey orqali API key oling
 """
 
 import json
 from typing import Dict, List, Optional
-from openai import OpenAI
-from config import OPENAI_API_KEY, AI_MODEL, AI_MAX_TOKENS, AI_TEMPERATURE
+import google.generativeai as genai
+from config import GEMINI_API_KEY, GEMINI_MODEL, AI_MAX_TOKENS, AI_TEMPERATURE
 from search_engine import SearchEngine
 
 
@@ -14,43 +15,44 @@ class AIHandler:
     """AI yordamida savollarga javob berish"""
 
     def __init__(self):
-        self.client = OpenAI(api_key=OPENAI_API_KEY)
+        genai.configure(api_key=GEMINI_API_KEY)
+        self.model = genai.GenerativeModel(GEMINI_MODEL)
         self.search = SearchEngine()
 
     def _extract_topics(self, question: str) -> Dict:
         """
         AI yordamida savoldan mavzularni va ma'noni chiqarish
         """
-        system_prompt = """Sen Islom dini bo'yicha ekspertsan. Foydalanuvchining savolini tahlil qilib:
+        prompt = f"""Sen Islom dini bo'yicha ekspertsan. Foydalanuvchining savolini tahlil qilib:
 1. Savolning asosiy ma'nosini tushun
 2. Qaysi Islomiy mavzularga aloqadorligini aniqla
 3. Qidiruv uchun kalit so'zlar va mavzularni chiqar
 
+Foydalanuvchi savoli: "{question}"
+
 Javobni FAQAT quyidagi JSON formatda bering, hech qanday qo'shimcha matn yozma:
-{
+{{
   "meaning": "savolning qisqacha ma'nosi o'zbek tilida",
   "topics": ["mavzu1", "mavzu2", "mavzu3"],
   "keywords": ["kalit1", "kalit2", "kalit3"],
   "category": "namoz|ro'za|zakot|haj|tavhid|axloq|duo|sabr|shukr|ilim|jannat|do'zax|tavba|nikoh|oila|huquq|boshqa"
-}
+}}
 
-Mavzular o'zbek tilida bo'lsin. Masalan: namoz, ro'za, zakot, tavhid, shirk, sabr, shukr, tavba, 
-ilim, duo, zikr, jannat, do'zax, axloq, oila, nikoh, ota-ona, qo'shni, sadaqa, infaq, 
+Mavzular o'zbek tilida bo'lsin. Masalan: namoz, ro'za, zakot, tavhid, shirk, sabr, shukr, tavba,
+ilim, duo, zikr, jannat, do'zax, axloq, oila, nikoh, ota-ona, qo'shni, sadaqa, infaq,
 hijob, halol, harom, taqvo, imon, kufr, nifoq, hijrat, jihod, payg'ambar, sahobalar, va hokazo."""
 
         try:
-            response = self.client.chat.completions.create(
-                model=AI_MODEL,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": question}
-                ],
-                max_tokens=500,
-                temperature=0.1,
-                response_format={"type": "json_object"}
+            response = self.model.generate_content(
+                prompt,
+                generation_config=genai.types.GenerationConfig(
+                    temperature=0.1,
+                    max_output_tokens=500,
+                    response_mime_type="application/json"
+                )
             )
 
-            result = json.loads(response.choices[0].message.content)
+            result = json.loads(response.text)
             return result
 
         except Exception as e:
@@ -70,7 +72,7 @@ hijob, halol, harom, taqvo, imon, kufr, nifoq, hijrat, jihod, payg'ambar, sahoba
         quran_texts = ""
         for i, ayat in enumerate(quran_results, 1):
             quran_texts += f"""
-{i}. 📖 {ayat['surah_name']} surasi, {ayat['ayat']}-oyat
+{i}. {ayat['surah_name']} surasi, {ayat['ayat']}-oyat
    Arabcha: {ayat['arabic']}
    O'zbekcha: {ayat['uzbek']}
 """
@@ -79,12 +81,12 @@ hijob, halol, harom, taqvo, imon, kufr, nifoq, hijrat, jihod, payg'ambar, sahoba
         hadith_texts = ""
         for i, hadith in enumerate(hadith_results, 1):
             hadith_texts += f"""
-{i}. 📚 {hadith['collection']} (Raviy: {hadith['narrator']})
+{i}. {hadith['collection']} (Raviy: {hadith['narrator']})
    Arabcha: {hadith['arabic']}
    O'zbekcha: {hadith['uzbek']}
 """
 
-        system_prompt = f"""Sen "FURQON AI" — Qur'on va Hadislar asosida javob beruvchi Islomiy bilim botsan.
+        prompt = f"""Sen "FURQON AI" — Qur'on va Hadislar asosida javob beruvchi Islomiy bilim botsan.
 
 QOIDALAR:
 1. Javobni o'zbek tilida, tushunarli va hurmatli tarzda ber
@@ -117,20 +119,18 @@ Endi quyidagi strukturada javob ber:
 [Qisqacha xulosa va maslahat]"""
 
         try:
-            response = self.client.chat.completions.create(
-                model=AI_MODEL,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": question}
-                ],
-                max_tokens=AI_MAX_TOKENS,
-                temperature=AI_TEMPERATURE
+            response = self.model.generate_content(
+                prompt,
+                generation_config=genai.types.GenerationConfig(
+                    temperature=AI_TEMPERATURE,
+                    max_output_tokens=AI_MAX_TOKENS,
+                )
             )
 
-            return response.choices[0].message.content
+            return response.text
 
         except Exception as e:
-            # Agar AI ishlamasa, oddiy javob qaytar
+            print(f"AI javob yaratishda xato: {e}")
             return self._fallback_answer(question, quran_results, hadith_results)
 
     def _fallback_answer(self, question: str, quran_results: List[Dict], hadith_results: List[Dict]) -> str:
@@ -168,7 +168,6 @@ Endi quyidagi strukturada javob ber:
         keywords = analysis.get("keywords", [])
 
         # 2. Qur'on va Hadislardan qidirish
-        # Mavzular va kalit so'zlar bo'yicha qidirish
         all_search_terms = topics + keywords
 
         quran_results = []
